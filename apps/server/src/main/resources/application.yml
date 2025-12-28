@@ -1,0 +1,32 @@
+spring:
+  application:
+    name: filey
+
+  datasource:
+    url: jdbc:sqlite:${FILEY_DATA_DIR:./data}/filey.db
+    driver-class-name: org.sqlite.JDBC
+
+  jpa:
+    database-platform: org.hibernate.community.dialect.SQLiteDialect
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+
+  servlet:
+    multipart:
+      max-file-size: ${FILEY_MAX_UPLOAD_SIZE:10GB}
+      max-request-size: ${FILEY_MAX_UPLOAD_SIZE:10GB}
+
+server:
+  port: ${FILEY_PORT:8080}
+
+filey:
+  data-dir: ${FILEY_DATA_DIR:./data}
+  storage-dir: ${FILEY_STORAGE_DIR:./storage}
+  session-timeout: ${FILEY_SESSION_TIMEOUT:7d}
+  trash-retention: ${FILEY_TRASH_RETENTION:30d}
+
+logging:
+  level:
+    root: ${FILEY_LOG_LEVEL:info}
+    com.filey: ${FILEY_LOG_LEVEL:info}

@@ -1,0 +1,18 @@
+{
+    "name": "filey",
+    "version": "0.0.1",
+    "private": true,
+    "license": "AGPL-3.0-only",
+    "scripts": {
+        "dev": "nx run-many --target=dev --all",
+        "build": "nx run-many --target=build --all",
+        "test": "nx run-many --target=test --all",
+        "lint": "nx run-many --target=lint --all",
+        "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json}\"",
+        "format:check": "prettier --check \"**/*.{ts,tsx,js,jsx,json}\""
+    },
+    "devDependencies": {
+        "nx": "22.3.3",
+        "prettier": "3.7.4"
+    }
+}

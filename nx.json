@@ -1,0 +1,32 @@
+{
+    "$schema": "./node_modules/nx/schemas/nx-schema.json",
+    "installation": {
+        "version": "22.3.3"
+    },
+    "namedInputs": {
+        "default": ["{projectRoot}/**/*", "sharedGlobals"],
+        "sharedGlobals": [],
+        "production": [
+            "default",
+            "!{projectRoot}/**/*.spec.ts",
+            "!{projectRoot}/**/*.test.ts",
+            "!{projectRoot}/tests/**/*"
+        ]
+    },
+    "targetDefaults": {
+        "build": {
+            "dependsOn": ["^build"],
+            "cache": true
+        },
+        "test": {
+            "cache": true
+        },
+        "lint": {
+            "cache": true
+        }
+    },
+    "workspaceLayout": {
+        "appsDir": "apps",
+        "libsDir": "packages"
+    }
+}

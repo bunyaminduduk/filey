@@ -1,0 +1,33 @@
+# IDE
+.idea
+.vscode
+
+# Nx
+.nx/cache
+.nx/workspace-data
+
+# Dependencies
+node_modules
+
+# Build outputs
+dist
+build
+*.jar
+.gradle
+
+# Generated files
+*.gen.ts
+*.tsbuildinfo
+.tanstack
+
+# Runtime data
+apps/server/data
+apps/server/storage
+*.db
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db

@@ -1,0 +1,33 @@
+{
+    "name": "server",
+    "$schema": "../../node_modules/nx/schemas/project-schema.json",
+    "projectType": "application",
+    "sourceRoot": "apps/server/src",
+    "targets": {
+        "dev": {
+            "command": "./gradlew bootRun",
+            "options": {
+                "cwd": "apps/server"
+            }
+        },
+        "build": {
+            "command": "./gradlew build -x test",
+            "options": {
+                "cwd": "apps/server"
+            },
+            "outputs": ["{projectRoot}/build"]
+        },
+        "test": {
+            "command": "./gradlew test",
+            "options": {
+                "cwd": "apps/server"
+            }
+        },
+        "clean": {
+            "command": "./gradlew clean",
+            "options": {
+                "cwd": "apps/server"
+            }
+        }
+    }
+}
