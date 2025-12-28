@@ -31,3 +31,5 @@ apps/server/storage
 # OS
 .DS_Store
 Thumbs.db
+
+storybook-static

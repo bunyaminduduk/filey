@@ -9,10 +9,27 @@
         "test": "nx run-many --target=test --all",
         "lint": "nx run-many --target=lint --all",
         "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json}\"",
-        "format:check": "prettier --check \"**/*.{ts,tsx,js,jsx,json}\""
+        "format:check": "prettier --check \"**/*.{ts,tsx,js,jsx,json}\"",
+        "storybook": "nx storybook @filey/ui"
     },
     "devDependencies": {
+        "@nx/js": "22.3.3",
+        "@nx/react": "22.3.3",
+        "@nx/storybook": "22.3.3",
+        "@nx/vite": "22.3.3",
+        "@nx/web": "22.3.3",
+        "@storybook/react": "10.1.10",
+        "@storybook/react-vite": "10.1.10",
+        "@swc-node/register": "1.11.1",
+        "@swc/core": "1.15.7",
+        "@swc/helpers": "0.5.18",
         "nx": "22.3.3",
-        "prettier": "3.7.4"
-    }
+        "prettier": "3.7.4",
+        "storybook": "10.1.10",
+        "ts-node": "10.9.1",
+        "tslib": "2.8.1",
+        "typescript": "5.9.3",
+        "vite": "7.3.0"
+    },
+    "dependencies": {}
 }
