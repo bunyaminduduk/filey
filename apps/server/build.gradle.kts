@@ -21,6 +21,9 @@ dependencies {
     implementation("org.springframework.boot:spring-boot-starter-security")
     implementation("org.springframework.boot:spring-boot-starter-validation")
 
+    // OpenAPI
+    implementation("org.springdoc:springdoc-openapi-starter-webmvc-ui:2.8.4")
+
     // SQLite
     implementation("org.xerial:sqlite-jdbc:3.47.2.0")
     implementation("org.springframework.boot:spring-boot-starter-data-jpa")

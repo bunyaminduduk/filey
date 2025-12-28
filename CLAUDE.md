@@ -33,7 +33,4 @@ pnpm format     # Format with Prettier
 
 ## Docs
 
-Detailed specs in `.tasks/`:
-- `.tasks/architecture.md` — Auth flow, file storage, dev vs prod
-- `.tasks/implementation-plan.md` — Build phases
-- `.tasks/v1/` — Feature specifications
+Detailed specs in `.tasks/`.

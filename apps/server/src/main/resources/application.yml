@@ -26,6 +26,12 @@ filey:
   session-timeout: ${FILEY_SESSION_TIMEOUT:7d}
   trash-retention: ${FILEY_TRASH_RETENTION:30d}
 
+springdoc:
+  api-docs:
+    path: /v3/api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+
 logging:
   level:
     root: ${FILEY_LOG_LEVEL:info}
