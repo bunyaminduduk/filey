@@ -7,13 +7,13 @@
 .nx/workspace-data
 
 # Dependencies
-node_modules
+**/node_modules
 
 # Build outputs
 dist
 build
 *.jar
-.gradle
+**/.gradle
 
 # Generated files
 *.gen.ts
