@@ -5,7 +5,7 @@
  * Self-hosted file server API
  * OpenAPI spec version: 0.0.1
  */
-import type { ErrorResponse } from './errorResponse';
+import type { ErrorResponse } from "./errorResponse";
 
 /**
  * Authentication required

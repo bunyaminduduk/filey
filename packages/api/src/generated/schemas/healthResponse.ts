@@ -10,10 +10,10 @@
  * Health check response
  */
 export interface HealthResponse {
-  /** Current health status */
-  status?: string;
-  /** API version */
-  version?: string;
-  /** Server uptime in seconds */
-  uptime?: number;
+    /** Current health status */
+    status?: string;
+    /** API version */
+    version?: string;
+    /** Server uptime in seconds */
+    uptime?: number;
 }

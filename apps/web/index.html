@@ -5,6 +5,18 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Filey</title>
+    <script>
+      // Early theme detection to prevent flash of wrong theme
+      (function() {
+        const stored = localStorage.getItem('filey-theme');
+        if (stored === 'dark') {
+          document.documentElement.classList.add('dark');
+        } else if (stored === 'light') {
+          document.documentElement.classList.add('light');
+        }
+        // 'system' or no stored value: let CSS media query handle it
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>

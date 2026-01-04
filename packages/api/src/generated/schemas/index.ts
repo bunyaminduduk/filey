@@ -6,11 +6,11 @@
  * OpenAPI spec version: 0.0.1
  */
 
-export * from './badRequestResponse';
-export * from './errorCode';
-export * from './errorResponse';
-export * from './forbiddenResponse';
-export * from './healthResponse';
-export * from './internalErrorResponse';
-export * from './notFoundResponse';
-export * from './unauthorizedResponse';
+export * from "./badRequestResponse";
+export * from "./errorCode";
+export * from "./errorResponse";
+export * from "./forbiddenResponse";
+export * from "./healthResponse";
+export * from "./internalErrorResponse";
+export * from "./notFoundResponse";
+export * from "./unauthorizedResponse";

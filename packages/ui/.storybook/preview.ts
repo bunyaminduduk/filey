@@ -3,13 +3,13 @@ import "../src/theme.css";
 
 const preview: Preview = {
     parameters: {
-        backgrounds: {
-            default: "light",
-            values: [
-                { name: "light", value: "#ffffff" },
-                { name: "dark", value: "#0a0a0a" },
-            ],
-        },
+        // backgrounds: {
+        //     default: "light",
+        //     values: [
+        //         { name: "light", value: "#ffffff" },
+        //         { name: "dark", value: "#0a0a0a" },
+        //     ],
+        // },
     },
 };
 

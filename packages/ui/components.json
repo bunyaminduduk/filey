@@ -4,8 +4,8 @@
     "rsc": false,
     "tsx": true,
     "tailwind": {
-        "config": "tailwind.config.js",
-        "css": "src/index.css",
+        "config": "",
+        "css": "./src/theme.css",
         "baseColor": "neutral",
         "cssVariables": true,
         "prefix": ""
@@ -13,10 +13,9 @@
     "iconLibrary": "lucide",
     "aliases": {
         "components": "@/components",
-        "utils": "@filey/ui",
-        "ui": "../../packages/ui/src/components",
+        "utils": "@/lib/utils",
+        "ui": "@/components",
         "lib": "@/lib",
         "hooks": "@/hooks"
-    },
-    "registries": {}
+    }
 }

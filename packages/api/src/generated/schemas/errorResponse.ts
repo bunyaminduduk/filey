@@ -5,15 +5,15 @@
  * Self-hosted file server API
  * OpenAPI spec version: 0.0.1
  */
-import type { ErrorCode } from './errorCode';
+import type { ErrorCode } from "./errorCode";
 
 /**
  * Error response
  */
 export interface ErrorResponse {
-  code?: ErrorCode;
-  /** Human-readable error message */
-  message?: string;
-  /** HTTP status code */
-  status?: unknown;
+    code?: ErrorCode;
+    /** Human-readable error message */
+    message?: string;
+    /** HTTP status code */
+    status?: unknown;
 }
